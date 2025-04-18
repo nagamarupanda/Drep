@@ -1,0 +1,101 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": {
+          "@id": "CIP119:image",
+          "@context": {
+            "ImageObject": "https://schema.org/ImageObject",
+            "contentUrl": "CIP119:contentUrl",
+            "sha256": "CIP119:sha256"
+          }
+        },
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "givenName": "SASA_nagamaru_ながまる",
+    "image": {
+      "@type": "ImageObject",
+      "contentUrl": "https://raw.githubusercontent.com/nagamarupanda/Drep/4852b3ec9781200699ba7bc146eed2e71be847d0/nagamaru%20logo.png",
+      "sha256": "f3e374c7491f3da91bfd863089b727edbb096b7af648b68fe1ad9f78d617aa2d"
+    },
+    "motivations": "カルダノは、コードだけでは成り立たないプロジェクトだと僕は思っています。技術だけでは動かず、関わる人の意志があり、初めて前に進むものだと思っています。\n\n目の前の声にも、遠い未来にも真摯に向き合い、その意志を伝えていきます。カルダノを本気で良くしたいという想いと、未来への責任を胸に、DRepとして行動していきます。\n\nI believe Cardano is a project that can’t be sustained by code alone. Technology alone isn’t enough. It’s people who give it direction and purpose.\n\nI aim to engage sincerely with both the voices in front of me and the future ahead, and to carry forward the intentions behind them. With a strong commitment to improving Cardano and a sense of responsibility for its future, I will act as a DRep.",
+    "objectives": "17歳でカルダノに出会ってから、ずっとこのチェーンと共に歩んできました。SPOとしての活動やYouTubeでの発信を通じて、多くのホルダーの声を聞いてきました。けれど、その声がガバナンスの現場で十分に活かされていないと感じています。\n\nだから僕はDRepとして、寄せられた声には真剣に耳を傾け、その上で、自分の言葉と責任で判断します。人気や一時の空気に流されず、10年後のカルダノにとって意味のある選択をしていきます。\n\nI first encountered Cardano when I was 17, and I’ve been walking alongside this chain ever since. Through my work as an SPO and content creator on YouTube, I’ve listened to many voices from the community. Still, I often feel that those voices aren’t fully reflected in governance today.\n\nAs a DRep, I listen seriously to every voice I receive, and I make decisions based on my own words and responsibility. Rather than being swayed by trends or short-term popularity, I focus on making choices that will truly matter ten years from now.",
+    "paymentAddress": "addr1q9nsyetynk59glhxly4mcqzkm6c9xcx8tuk6pexv5vq5yn2vu5wf0y7gfz53rdw462xjr3pt0xxe67zjzcly304qhgmqd9ldyc",
+    "qualifications": "カルダノ系Youtuber、SPO、インターセクト日本ハブのコアメンバー / Youtuber specializing in Cardano for Japanese, SPO, Intersect JapanHub Core member",
+    "references": [
+      {
+        "@type": "Link",
+        "label": "Youtube",
+        "uri": "https://www.youtube.com/@sasastakepool/videos"
+      },
+      {
+        "@type": "Link",
+        "label": "X (Twitter)",
+        "uri": "https://x.com/nagamaru_panda"
+      },
+      {
+        "@type": "Link",
+        "label": "ブログ",
+        "uri": "https://nagamaru-panda.blog/"
+      },
+      {
+        "@type": "Identity",
+        "label": "X (Twitter)",
+        "uri": "https://x.com/nagamaru_panda"
+      },
+      {
+        "@type": "Identity",
+        "label": "Youtube",
+        "uri": "https://www.youtube.com/@sasastakepool/videos"
+      }
+    ]
+  }
+}
